@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BookMarker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://bootswatch.com/4/materia/bootstrap.min.css" />
+    
+</head>
+<body onload="fetchBookmarks()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="display-5">EVENT BOOKMARKER</h1>
+    </nav>
+
+    <br>
+
+    <div class="container" id="alerts">
+        <!-- Alert Shows up here -->
+    </div>
+    
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Bookmark your upcomig events</h1>
+            </br>
+            <form id="myForm">
+                <div class="form-group">
+                    <h2>Event</h2>
+                    <input class="form-control" id="eventName" placeholder="Enter Event Name" type="text">
+                </div>
+                <div class="form-group">
+                    <h2>Date</h2>
+                    <input class="form-control" id="date" placeholder="Enter Date" type="datetime-local">
+                </div>
+                <div class="form-group">
+                    <h2>Time</h2>
+                    <input class="form-control" id="time" placeholder="Enter Date" type="time">
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="bookmarkResults">
+            <!-- Bookmarks will be displayed here -->
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
